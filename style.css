@@ -1,0 +1,173 @@
+
+@font-face {
+font-family: "Work Sans";
+src: url("css/fonts/worksans-regular-webfont.eot");
+src: 
+url("css/fonts/worksans-regular-webfont.woff") format("woff"),
+url("css/fonts/worksans-regular-webfont.otf") format("opentype"),
+url("css/fonts/worksans-regular-webfont.svg#filename") format("svg");
+}
+
+
+div#background1 {
+  position:absolute;
+  background: linear-gradient(to bottom right, #E6D8AC, #8CBDD1);
+  background-color: #E6D8AC;
+  margin: 0px;
+  opacity: 1;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -8;
+  transition: 0.7s;
+}
+
+div#background2 {
+  position:absolute;
+  background: linear-gradient(to bottom right, #060707, #E5E4E5);
+  background-color: #060707;
+  margin: 0px;
+  opacity: 1;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -9;
+  transition: 0.7s;
+}
+
+div#background3 {
+  position:absolute;
+  background: linear-gradient(to bottom right, #FA4465, #D489D6);
+  background-color: #FA4465;
+  margin: 0px;
+  opacity: 1;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  transition: 0.7s;
+}
+
+#darker-span {
+  filter: brightness(25%);
+}
+
+div.banner {
+  font-family: "Work Sans", Arial;
+  font-size: 56px;
+  background-color: rgba(255,255,255,.7);
+}
+
+img.main1 {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  left: 12px;
+  top: 150px;
+  z-index: 2;
+}
+
+img.dark1 {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  left: 12px;
+  top: 120px;
+  z-index: 1;
+}
+
+img.main2 {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  left: 12px;
+  top: 150px;
+  z-index: 2;
+}
+
+img.dark2 {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  left: 12px;
+  top: 120px;
+  z-index: 1;
+}
+
+img.main3 {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  left: 12px;
+  top: 150px;
+  z-index: 2;
+}
+
+img.dark3 {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  left: 12px;
+  top: 120px;
+  z-index: 1;
+}
+
+div.head1 {
+  font-family: "Work Sans", Arial;
+  font-size: 56px;
+  position: absolute;
+  width: 750px;
+  left: 800px;
+  top: 150px;
+}
+
+div.head2 {
+  font-family: "Work Sans", Arial;
+  font-size: 32px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+}
+
+#button1 {
+  position: absolute;
+  width: 150px;
+  top: 120px;
+  left: 0px;
+  opacity: 1;
+  background: linear-gradient(to bottom right, #E6D8AC, #8CBDD1);
+  transition: 0.2s;
+}
+
+#button1:hover {
+  filter: brightness(120%);
+}
+
+#button2 {
+  position: absolute;
+  width: 150px;
+  left: 0px;
+  opacity: 1;
+  background: linear-gradient(to bottom right, #060707, #E5E4E5);
+  transition: 0.2s;
+}
+
+#button2:hover {
+  filter: brightness(120%);
+}
+
+#button3 {
+  position: absolute;
+  width: 150px;
+  left: 0px;
+  opacity: 1;
+  background: linear-gradient(to bottom right, #FA4465, #D489D6);
+  transition: 0.2s;
+}
+
+#button3:hover {
+  filter: brightness(120%);
+}
