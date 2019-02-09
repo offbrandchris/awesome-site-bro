@@ -13,6 +13,12 @@ document.getElementById("button2").style.height = buttonHeight;
 document.getElementById("button3").style.top = (2*buttonHeight)+120;
 document.getElementById("button3").style.height = buttonHeight;
 
+document.getElementById("button1mouse").style.height = buttonHeight;
+document.getElementById("button2mouse").style.top = buttonHeight+120;
+document.getElementById("button2mouse").style.height = buttonHeight;
+document.getElementById("button3mouse").style.top = (2*buttonHeight)+120;
+document.getElementById("button3mouse").style.height = buttonHeight;
+
 //setting initial album selection to wisteria
 let albumSelected = "wisteria";
 
@@ -21,12 +27,20 @@ function dimOpacity(x) {
   x.style.opacity = 0;
 }
 
+function brightOpacity(x) {
+	x.style.opacity = .2;
+}
+
 //make visible only the buttons which are not currently pushed
 function buttonCheck() {
   if (albumSelected === "wisteria") {
     document.getElementById("button1").style.visibility = "hidden";
     document.getElementById("button2").style.visibility = "visible";
     document.getElementById("button3").style.visibility = "visible";
+	
+    document.getElementById("button1mouse").style.visibility = "hidden";
+    document.getElementById("button2mouse").style.visibility = "visible";
+    document.getElementById("button3mouse").style.visibility = "visible";	
 
     document.getElementById("wis").style.visibility = "visible";
     document.getElementById("com").style.visibility = "hidden";
@@ -38,6 +52,10 @@ function buttonCheck() {
     document.getElementById("button1").style.visibility = "visible";
     document.getElementById("button2").style.visibility = "hidden";
     document.getElementById("button3").style.visibility = "visible";
+	
+    document.getElementById("button1mouse").style.visibility = "visible";
+    document.getElementById("button2mouse").style.visibility = "hidden";
+    document.getElementById("button3mouse").style.visibility = "visible";
 
     document.getElementById("wis").style.visibility = "hidden";
     document.getElementById("com").style.visibility = "visible";
@@ -49,6 +67,10 @@ function buttonCheck() {
     document.getElementById("button1").style.visibility = "visible";
     document.getElementById("button2").style.visibility = "visible";
     document.getElementById("button3").style.visibility = "hidden";
+
+    document.getElementById("button1mouse").style.visibility = "visible";
+    document.getElementById("button2mouse").style.visibility = "visible";
+    document.getElementById("button3mouse").style.visibility = "hidden";
 
     document.getElementById("wis").style.visibility = "hidden";
     document.getElementById("com").style.visibility = "hidden";

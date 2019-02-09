@@ -8,7 +8,6 @@ url("css/fonts/worksans-regular-webfont.otf") format("opentype"),
 url("css/fonts/worksans-regular-webfont.svg#filename") format("svg");
 }
 
-
 div#background1 {
   position:absolute;
   background: linear-gradient(to bottom right, #E6D8AC, #8CBDD1);
@@ -120,6 +119,7 @@ div.head1 {
   font-size: 56px;
   position: absolute;
   width: 750px;
+  height: 700px;
   left: 800px;
   top: 150px;
 }
@@ -129,6 +129,14 @@ div.head2 {
   font-size: 32px;
   position: absolute;
   top: 100px;
+  left: 0;
+}
+
+div.head3 {
+  font-family: "Work Sans", Arial;
+  font-size: 16px;
+  position: absolute;
+  bottom: 0px;
   left: 0;
 }
 
@@ -142,8 +150,20 @@ div.head2 {
   transition: 0.2s;
 }
 
-#button1:hover {
-  filter: brightness(120%);
+#button1mouse {
+  position: absolute;
+  width: 150px;
+  top: 120px;
+  left: 0px;
+  opacity: 0;
+  z-index: 100;
+  background: linear-gradient(to bottom right, #FFFFFF, #FFFFFF);
+  transition: 0.2s;
+}
+
+#button1mouse:hover {
+  cursor: pointer;
+  opacity: 0.2;
 }
 
 #button2 {
@@ -155,8 +175,19 @@ div.head2 {
   transition: 0.2s;
 }
 
-#button2:hover {
-  filter: brightness(120%);
+#button2mouse {
+  position: absolute;
+  width: 150px;
+  left: 0px;
+  opacity: 0;
+  z-index: 100;
+  background: linear-gradient(to bottom right, #FFFFFF, #FFFFFF);
+  transition: 0.2s;
+}
+
+#button2mouse:hover {
+  cursor: pointer;
+  opacity: 0.2;
 }
 
 #button3 {
@@ -164,10 +195,31 @@ div.head2 {
   width: 150px;
   left: 0px;
   opacity: 1;
+  
   background: linear-gradient(to bottom right, #FA4465, #D489D6);
   transition: 0.2s;
 }
 
-#button3:hover {
-  filter: brightness(120%);
+#button3mouse {
+  position: absolute;
+  width: 150px;
+  left: 0px;
+  opacity: 0;
+  z-index: 100;
+  background: linear-gradient(to bottom right, #FFFFFF, #FFFFFF);
+  transition: 0.2s;
+}
+
+#button3mouse:hover {
+  cursor: pointer;
+  opacity: 0.2;
+}
+
+p#social {
+	position: absolute;
+	top: 0px;
+	right: 16px;
+	text-align: right;
+	font-family: "Work Sans";
+	font-size: 24px;
 }

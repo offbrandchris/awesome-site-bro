@@ -11,34 +11,99 @@
 <div id="background2"></div>
 <div id="background3"></div>
 
-<div class="banner" height=50px>|| <i>offbrand.wtf</i></div>
-
-  <img class="main1" src="img/wisteria.png" alt="wisteria" onload="setImageStart()">
-  <img class="dark1" id="darker-span" src="img/wisteria.png">
-  <img class="main2" src="img/comeback.jpg" alt="comeback">
-  <img class="dark2" id="darker-span" src="img/comeback.jpg">
-  <img class="main3" src="img/coherent.jpg" alt="a coherent fix">
-  <img class="dark3" id="darker-span" src="img/coherent.jpg">
-
-<div class="head1" id="wis">Wisteria
-  <div class="head2" id="wis">yo this single is bumpin' that's for sure</div>
+<div class="banner" height=50px>
+	|| <i>offbrand.wtf</i>
+	<p id="social"><i>
+	<a href="https://soundcloud.com/offbrandmusic" target="_blank">soundcloud</a> | 
+	<a href="https://twitter.com/offbrand__chris" target="_blank">twitter</a> |
+	<a href="https://instagram.com/offbrand.chris" target="_blank">instagram</a> 
+	</i></p>
 </div>
 
-<div class="head1" id="com">Comeback
-  <div class="head2" id="com"></div>
+  <img class="main1" src="wisteria.png" alt="wisteria" onload="setImageStart()">
+  <img class="dark1" id="darker-span" src="wisteria.png">
+  <img class="main2" src="comeback.jpg" alt="comeback">
+  <img class="dark2" id="darker-span" src="comeback.jpg">
+  <img class="main3" src="coherent.jpg" alt="a coherent fix">
+  <img class="dark3" id="darker-span" src="coherent.jpg">
+
+<div class="head1" id="wis">
+  Wisteria
+  <div class="head2" id="wis">
+    the newest single from offbrand<br>
+    <ul>
+	  <li>super minimalist</li>
+      <li>hella chill</li>
+    </ul>
+	<br>
+	<a href="https://soundcloud.com/offbrandmusic/wisteria" target="_blank"><i>soundcloud</i></a><br>
+	<br>
+	<br>
+	<br>
+	<div class="head3" id="wis">
+	  copyright 2019 offbrand
+	</div>
+  </div>
+</div>
+
+<div class="head1" id="com">
+  Comeback
+  <div class="head2" id="com">
+    2018 album about loss, sadness, depression, and how to deal with that stuff. the story of my comeback.
+	<br><i>
+	<br>
+	<a href="https://soundcloud.com/offbrandmusic/sets/comeback" target="_blank">soundcloud</a><br>
+	<a href="https://open.spotify.com/album/14XV1JDGHcHCTnwRKl2k9t" target="_blank">spotify</a><br>
+	<a href="https://itunes.apple.com/us/album/comeback/1338881648" target="_blank">apple music</a><br>
+	<a href="https://cheapbeatsmusic.bandcamp.com/album/comeback" target="_blank">bandcamp</a></i><br>
+	<br>
+	<br>
+	<div class="head3" id="com">
+	  copyright 2018 offbrand<br>
+	  released through cheapbeats music<br>
+	  mastered by toni leys
+	</div>
+  </div>
 </div>
 
 <div class="head1" id="coh">A Coherent Fix
-  <div class="head2" id="coh"></div>
+  <div class="head2" id="coh">
+    2016 album: pretty much all bangers<br>
+	melodic as fuck, made using only lsdj<br>
+	certified classic(tm)<br>
+	<br><i>
+	<a href="https://open.spotify.com/album/4MTZsV65EX1XnXOsbZSUcA" target="_blank">spotify</a><br>
+	<a href="https://itunes.apple.com/us/album/a-coherent-fix/1076743417" target="_blank">apple music</a><br>
+	<a href="https://cheapbeatsmusic.bandcamp.com/album/a-coherent-fix" target="_blank">bandcamp</a></i><br>
+	<br>
+	<br>
+	<br>
+	<div class="head3" id="coh">
+	  copyright 2016 offbrand<br>
+	  released through cheapbeats music<br>
+	  mastered by toni leys<br>
+	  art by love thru canibalism<br>
+	</div>
+  </div>
 </div>
 
-<div id="button1" onclick="clickWisteria();dimOpacity(this)">
+<div id="button1">
 
 </div>
-<div id="button2" onclick="clickComeback();dimOpacity(this)">
+<div id="button2">
 
 </div>
-<div id="button3" onclick="clickCoherent();dimOpacity(this)">
+<div id="button3">
+
+</div>
+
+<div id="button1mouse" onclick="clickWisteria();dimOpacity(this);dimOpacity(document.getElementById('button1'))" onmouseover="brightOpacity(this)" onmouseout="dimOpacity(this)">
+
+</div>
+<div id="button2mouse" onclick="clickComeback();dimOpacity(this);dimOpacity(document.getElementById('button2'))" onmouseover="brightOpacity(this)" onmouseout="dimOpacity(this)">
+
+</div>
+<div id="button3mouse" onclick="clickCoherent();dimOpacity(this);dimOpacity(document.getElementById('button3'))" onmouseover="brightOpacity(this)" onmouseout="dimOpacity(this)">
 
 </div>
 
