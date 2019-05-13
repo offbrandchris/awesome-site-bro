@@ -1,13 +1,4 @@
 
-@font-face {
-font-family: "Work Sans";
-src: url("css/fonts/worksans-regular-webfont.eot");
-src: 
-url("css/fonts/worksans-regular-webfont.woff") format("woff"),
-url("css/fonts/worksans-regular-webfont.otf") format("opentype"),
-url("css/fonts/worksans-regular-webfont.svg#filename") format("svg");
-}
-
 div#background1 {
   position:absolute;
   background: linear-gradient(to bottom right, #E6D8AC, #8CBDD1);
