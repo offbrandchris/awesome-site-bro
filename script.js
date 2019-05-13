@@ -5,6 +5,29 @@ const mainTwoStart = 120+buttonHeight+((buttonHeight-125)/2);
 const mainThreeStart = 120+2*buttonHeight+((buttonHeight-125)/2);
 
 let returnPosition = 0;
+let wider = true;
+
+//positioning text
+if (window.innerWidth > window.innerHeight) {
+  wider = true;
+}
+else {
+  wider = false;
+}
+
+if (wider == true) {
+  //do nothing
+}
+if (wider == false) {
+  document.getElementsByClassName("head1")[0].style.top = 700;
+  document.getElementsByClassName("head1")[0].style.left = 220;
+
+  document.getElementsByClassName("head1")[1].style.top = 700;
+  document.getElementsByClassName("head1")[1].style.left = 220;
+
+  document.getElementsByClassName("head1")[2].style.top = 700;
+  document.getElementsByClassName("head1")[2].style.left = 220;
+}
 
 //positioning left-side buttons
 document.getElementById("button1").style.height = buttonHeight;

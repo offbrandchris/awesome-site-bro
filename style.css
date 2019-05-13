@@ -41,6 +41,11 @@ div#background3 {
   transition: 0.7s;
 }
 
+#ghost-div {
+  width: 750px;
+  height: 650px;
+}
+
 #darker-span {
   filter: brightness(25%);
 }
