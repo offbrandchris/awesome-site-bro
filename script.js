@@ -7,6 +7,10 @@ const mainThreeStart = 120+2*buttonHeight+((buttonHeight-125)/2);
 let returnPosition = 0;
 let wider = true;
 
+window.onload = function() {
+  setImageStart();
+ }
+
 //positioning text
 if (window.innerWidth > window.innerHeight) {
   wider = true;
@@ -42,8 +46,8 @@ document.getElementById("button2mouse").style.height = buttonHeight;
 document.getElementById("button3mouse").style.top = (2*buttonHeight)+120;
 document.getElementById("button3mouse").style.height = buttonHeight;
 
-//setting initial album selection to wisteria
-let albumSelected = "wisteria";
+//setting initial album selection to newest
+let albumSelected = "newest";
 
 //to make buttons fade out
 function dimOpacity(x) {
@@ -56,7 +60,7 @@ function brightOpacity(x) {
 
 //make visible only the buttons which are not currently pushed
 function buttonCheck() {
-  if (albumSelected === "wisteria") {
+  if (albumSelected === "newest") {
     document.getElementById("button1").style.visibility = "hidden";
     document.getElementById("button2").style.visibility = "visible";
     document.getElementById("button3").style.visibility = "visible";
@@ -65,7 +69,7 @@ function buttonCheck() {
     document.getElementById("button2mouse").style.visibility = "visible";
     document.getElementById("button3mouse").style.visibility = "visible";	
 
-    document.getElementById("wis").style.visibility = "visible";
+    document.getElementById("new").style.visibility = "visible";
     document.getElementById("com").style.visibility = "hidden";
     document.getElementById("coh").style.visibility = "hidden";
 
@@ -80,7 +84,7 @@ function buttonCheck() {
     document.getElementById("button2mouse").style.visibility = "hidden";
     document.getElementById("button3mouse").style.visibility = "visible";
 
-    document.getElementById("wis").style.visibility = "hidden";
+    document.getElementById("new").style.visibility = "hidden";
     document.getElementById("com").style.visibility = "visible";
     document.getElementById("coh").style.visibility = "hidden";
 
@@ -95,7 +99,7 @@ function buttonCheck() {
     document.getElementById("button2mouse").style.visibility = "visible";
     document.getElementById("button3mouse").style.visibility = "hidden";
 
-    document.getElementById("wis").style.visibility = "hidden";
+    document.getElementById("new").style.visibility = "hidden";
     document.getElementById("com").style.visibility = "hidden";
     document.getElementById("coh").style.visibility = "visible";
 
@@ -132,7 +136,7 @@ function setImageStart() {
   document.getElementsByClassName("dark3")[0].style.top = mainThreeStart;
 }
 
-function clickWisteria() {
+function clickNewest() {
   //setting proper background
   document.getElementById("background1").style.opacity = 1;
   document.getElementById("background2").style.opacity = 0;
@@ -158,7 +162,7 @@ function clickWisteria() {
   function frame() {
 	//at 100, officially change the album selected, fade buttons in, and end loop
     if (tick == 100) {
-      albumSelected = "wisteria";
+      albumSelected = "newest";
       buttonCheck();
       clearInterval(id);
 	  document.getElementById("button2").style.opacity = 1;
@@ -196,7 +200,7 @@ function clickComeback() {
   document.getElementById("background2").style.opacity = 1;
   document.getElementById("background3").style.opacity = 0;
 
-  if (albumSelected === "wisteria") {
+  if (albumSelected === "newest") {
     var elem3 = document.getElementsByClassName("main1")[0];
     var elem4 = document.getElementsByClassName("dark1")[0];
   }
@@ -251,7 +255,7 @@ function clickCoherent() {
     var elem3 = document.getElementsByClassName("main2")[0];
     var elem4 = document.getElementsByClassName("dark2")[0];
   }
-  else if (albumSelected == "wisteria") {
+  else if (albumSelected == "newest") {
     var elem3 = document.getElementsByClassName("main1")[0];
     var elem4 = document.getElementsByClassName("dark1")[0];
   }

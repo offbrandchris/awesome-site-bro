@@ -1,7 +1,7 @@
 
 div#background1 {
   position:absolute;
-  background: linear-gradient(to bottom right, #E6D8AC, #8CBDD1);
+  background: linear-gradient(to bottom right, #fff896, #ffa059);
   background-color: #E6D8AC;
   margin: 0px;
   opacity: 1;
@@ -142,7 +142,7 @@ div.head3 {
   top: 120px;
   left: 0px;
   opacity: 1;
-  background: linear-gradient(to bottom right, #E6D8AC, #8CBDD1);
+  background: linear-gradient(to bottom right, #fff896, #ffa059);
   transition: 0.2s;
 }
 
